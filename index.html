@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body ng-app="financeApp" ng-controller="FinanceAppCtrl">
+
+        <div data-role="page" id="pageone">
+            <div data-role="header">
+                <h1>{{prueba}}Bienvenido a la apdivcacion de tus finanzas {{prueba}}</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <p>Accede a la apdivcación</p>
+                <a href="#pagetwo" data-transition="flow">Accede</a>
+            </div>
+
+            <div data-role="footer">
+                <h1>Sempesoft</h1>
+            </div>
+        </div>
+
+        <div data-role="page" id="pagetwo">
+
+            <div data-role="header">
+                <h1>Aqui podrás ver todos tus registros económicos:</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <input type="button" value="Mostrar dinero efectivo" class="button" data-type="zoomin" />
+
+                <h2>Lista de ahorros</h2>
+                <div class="listViewFinance">
+                    <div class="listFinance">
+                        <div><a href="#">Adele</a></div>
+                    </div>
+                    <div class="listFinance">
+                        <div><a href="#">Adele</a></div></div>
+                    <div class="listFinance"><div><a href="#">Adele</a></div>
+                    </div>
+                    <div class="listFinance">
+                        <div><a href="#">Adele</a></div>
+                    </div>
+                    <div class="listFinance">
+                        <div><a href="#">Adele</a></div>
+                    </div>
+                    <div class="listFinance">
+                        <div><a href="#">Adele</a></div>
+                    </div>
+                    <div class="listFinance">
+                        <div><a href="#">Adele</a></div>
+                    </div>
+                    <div class="listFinance">
+                        <div><a href="#">Adele</a></div>
+                    </div>
+                    <div class="listFinance">
+                        <div><a href="#">Adele</a></div>
+                    </div>
+                </div>
+                <a href="#pageone">Sadivr</a>
+            </div>
+            <div class="overlay-container">
+                <div class="window-container zoomin">
+                    <h3>Dinero efectivo</h3>
+                    <br/>
+                    <div id="dineroEfectivo">
+                        <span class="cantidad">1235,45</span>
+                        <span> €</span>
+                    </div>
+                    <br/>
+                    <span>Cerrar</span>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h1>Sempesoft</h1>
+            </div>
+
+        </div>
+
+    </body>
+</html>
+
